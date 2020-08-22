@@ -27,15 +27,18 @@ for (var index=0; index < userAges.length ; index++){
     if (userAges[index] < 18 && !userSubscribtion[index]){
         console.log("the user is younger than 18 and not subscribed");
     }
-    if (userAges[index] > 18 && !userSubscribtion[index]){
+    else if (userAges[index] > 18 && !userSubscribtion[index]){
         console.log("the user is older than 18 and not subscribed");
     }
-    if(userAges[index] < 18 && userSubscribtion[index]){
+    else if(userAges[index] < 18 && userSubscribtion[index]){
         console.log("the user is younger than 18 and is subscribed");
     
     }
-    if( userAges[index] > 18 && userSubscribtion[index]){
+    else if( userAges[index] > 18 && userSubscribtion[index]){
         console.log("the user is older than 18 and is subscribed");
+    }
+    else{
+        console.log("somthing went wrong");
     }
 
 
